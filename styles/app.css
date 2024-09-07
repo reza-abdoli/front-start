@@ -1,0 +1,641 @@
+/* App Fonts */
+
+@font-face {
+    font-family: "TTNorms";
+    src: url("../fonts/TTNorms-Regular.otf") format("openType");
+}
+@font-face {
+    font-family: "TTNorms Medium";
+    src: url("../fonts/TTNorms-Medium.otf") format("openType");
+}
+@font-face {
+    font-family: "TTNorms Light";
+    src: url("../fonts/TTNorms-Light.otf") format("openType");
+}
+
+@font-face {
+    font-family: "Times Roman Italic";
+    src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+}
+
+/* Normalize Css */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0; /* 3 */
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* Start Project */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "TTNorms";
+}
+
+.container {
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+/* ---------------------------------------------------- */
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__links {
+    margin-right: 2rem;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #605454;
+    padding: 1rem 1.5rem;
+    background-color: aqua;
+}
+
+.header__icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* // header button // */
+
+.header__bottom {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-button__el {
+    flex-basis: 50%;
+}
+
+.header-button__el img {
+    width: 100%;
+}
+
+.header-buttom1_wrapper {
+    max-width: 25rem;
+}
+
+.header-buttom1_wrapper h2 {
+    line-height: 2rem;
+}
+
+.header-buttom1_wrapper p {
+    line-height: 1.3rem;
+}
+
+.buttons__header-buttom {
+    display: flex;
+}
+
+.buttons__header-buttom a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 0.8rem;
+    margin: 0.5rem 0.5rem 0 0;
+    border-radius: 0.5rem;
+    width: 10rem;
+    text-align: center;
+}
+
+.see__works {
+    margin-left: 1.5rem;
+}
+
+/* --------------------------------------------- */
+.works {
+    text-align: center;
+}
+
+.main-header__1 {
+    padding: 2rem 0;
+}
+
+.main-header__2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.header-2__content {
+    max-width: 18rem;
+    line-height: 1.3rem;
+}
+
+.works__image {
+    max-width: 35rem;
+    margin: 10px auto;
+}
+
+.works__image img {
+    width: 100%;
+}
+/* ------------------------------------------------ */
+.good__hand {
+    background-color: rgb(107, 107, 255);
+    padding: 2rem 0;
+}
+
+.good__hand-container {
+    max-width: 65rem;
+    margin: 10px auto;
+}
+
+.good-hand__content {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.good-hand__content h5 {
+    line-height: 1.3rem;
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
+.good-hand__comments {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-evenly; to be responsive */
+}
+
+/* flex basis = mmax-width */
+.comments__instance {
+    min-height: 17rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-family: "Times Roman Italic";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 20rem;
+}
+
+.gh__comments {
+    padding: 1.2rem;
+}
+
+.image__instance {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid black;
+    padding: 1.2rem;
+
+}
+
+.image__instance h6 {
+    margin: 0 0 0 10px;
+}
+
+.good-hand__supports {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.img__supports {
+    display: block;
+    /* for giving margin */
+    margin: 1rem;
+}
+
+/* ---------------------------------------------------- */
+
+.profilito {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.profilito h4 {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.profilito__title {
+    margin: 0.5rem 0 3rem 0;
+}
+
+.profilito__instance {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profilito-image__wrapper {
+    margin: 0.5rem;
+    flex-basis: 25rem;
+/* -------------------- */
+    border-radius: 10px;
+    overflow: hidden;
+/* -------------------- */
+}
+
+.profilito__instance img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* growing and fitting image in case image doesnt fit and keeps it's quality */
+
+}
+/* every image should be put in a div to be responsive in its own tag we should set width 100% if page gets smaller , div gets smaller and and image in it gets smaller because its width is 100% of its parent.
+if it(image) doesnt get put(passive sentence!) in a div it will not be responsive and will not get small in case page gets small an scrolls */
+
+/* ------------------------------------------- */
+
+.email__submit {
+    background-color: rgb(107, 107, 255);
+    padding: 5rem 0;
+}
+
+/* If set a width to an element but it doesnt get it , it means that its parent doesnt let him be wider and we must set this width to its parent and set it's width 10% or whatever we want to be */
+
+.email__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.email__input {
+    display: flex;
+    flex-basis: 18rem;
+    background-color: #fff;
+    padding: 0.4rem 0.4rem 0.4rem 1.4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email__input input {
+    border: none;
+    outline: none;
+}
+
+.send__email {
+    background-color: rgb(75, 75, 224);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0.6rem 1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+/* solution 2 */
+
+/* .email__input {
+    position: relative;
+}
+
+.email__input input {
+    padding: 1rem;
+    border-radius: 0.5rem;
+} 
+
+.send__email {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgb(60, 60, 255);
+    color: aliceblue;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.send__email svg {
+    width: 100%;
+    height: 100%;
+} */
+
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header__link {
+        display: none;
+    }
+    /* the diffrence between visibility and display none is in hidden an element still in it's place but in display none an element completely removes */
+    
+    .header__icon {
+        display: block;
+    }
+
+    .header__bottom {
+        flex-direction: column-reverse;
+    }
+
+    .header-buttom1_wrapper {
+        max-width: 100%;
+    }
+    
+    .buttom1_wrapper {
+        flex-basis: 100%;
+    }
+
+    .good-hand__comments {
+        flex-wrap: wrap;
+    }
+
+    .comments__instance {
+        flex-basis: 19rem;
+    }
+
+    
+    element.style {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .email__content h2 {
+        max-width: 12rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+/* if there is space for shrinking padding doesn't change tag's size if not adds to tag's size */
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -240px;
+        bottom: 0;
+        flex-direction: column;
+        /* or display: block; */
+        background-color: #d4d4d4;
+        width: 15rem;
+        transition: 0.3s all;
+    }
+    .menu__item {
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header-2__content {
+        flex-basis: 14rem;
+    }
+
+    .comments__instance {
+        flex-basis: 13rem;
+    }
+    
+    .email__content {
+        flex-direction: column;
+    }
+
+    .email__content h2 {
+        max-width: 100%;
+    }
+
+    .email__input {
+        flex-basis: auto;
+        /* get height as much as you need */
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+  .buttons__header-buttom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .comments__instance {
+    flex-basis: 100%;
+}
+
+
+}
